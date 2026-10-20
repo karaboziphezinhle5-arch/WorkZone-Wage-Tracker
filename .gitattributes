@@ -1,2 +1,29 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+* teimport java.util.Scanner;
+public class Project{
+	public static void main(String[] arg){
+	Scanner target = new Scanner(System.in);
+	int iAge, iSalary, iHour, iPay;
+	double rPerimetre, rLength, rWidth;
+	String sName;
+	System.out.println("\n");
+	System.out.print("What is the workers name?: ");
+	sName = target.nextLine();
+	System.out.print("How old is he?: ");
+	iAge = target.nextInt();
+	System.out.println("\n");
+	System.out.print("What is the total length of the perimetre?: ");
+	rLength = target.nextDouble();
+	System.out.print("What is the width of the perimetre?: ");
+	rWidth = target.nextDouble();
+	rPerimetre = rLength * rWidth;
+	System.out.println("\n");
+	System.out.print("What are his total working hours?: ");
+	iHour = target.nextInt();
+	System.out.print("What is his pay per hour?: ");
+	iPay = target.nextInt();
+	System.out.println("\n");
+	iSalary = iPay * iHour;
+	System.out.print(sName + " who is " + iAge + " will be working on a fence that is  " + rPerimetre+"m long." + sName + " will earn R"+iSalary); 
+	}
+}xt=auto
