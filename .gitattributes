@@ -2,28 +2,35 @@
 * teimport java.util.Scanner;
 public class Project{
 	public static void main(String[] arg){
+
+    // Instantation of the scanner project
 	Scanner target = new Scanner(System.in);
+
+    //Declaring variables
 	int iAge, iSalary, iHour, iPay;
 	double rPerimetre, rLength, rWidth;
 	String sName;
-	System.out.println("\n");
-	System.out.print("What is the workers name?: ");
+
+    //Input
+	System.out.print("\nWhat is the workers name?: ");
 	sName = target.nextLine();
 	System.out.print("How old is he?: ");
 	iAge = target.nextInt();
-	System.out.println("\n");
-	System.out.print("What is the total length of the perimetre?: ");
+	System.out.print("\nWhat is the total length of the perimetre?: ");
 	rLength = target.nextDouble();
 	System.out.print("What is the width of the perimetre?: ");
 	rWidth = target.nextDouble();
 	rPerimetre = rLength * rWidth;
-	System.out.println("\n");
-	System.out.print("What are his total working hours?: ");
+	System.out.print("\nWhat are his total working hours?: ");
 	iHour = target.nextInt();
 	System.out.print("What is his pay per hour?: ");
 	iPay = target.nextInt();
 	System.out.println("\n");
+
+     // Proccessing
 	iSalary = iPay * iHour;
+
+    //Output
 	System.out.print(sName + " who is " + iAge + " will be working on a fence that is  " + rPerimetre+"m long." + sName + " will earn R"+iSalary); 
 	}
 }xt=auto
